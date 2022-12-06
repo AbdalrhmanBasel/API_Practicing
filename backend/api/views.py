@@ -1,3 +1,5 @@
-from django.shortcuts import render
+from django.http import JsonResponse
 
-# Create your views here.
+
+def api_homePage(request, *args, **kwargs):
+    return JsonResponse({"message": "Hey, this is home page API response!"})
